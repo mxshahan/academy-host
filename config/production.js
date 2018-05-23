@@ -1,16 +1,16 @@
 module.exports = {
   server: {
-    port: 3050,
+    port: 3000,
     compress: false
   },
   db: {
-		host: 'localhost',
-		dbName: 'academy',
+		host: 'ds111565.mlab.com',
+		dbName: 'blog',
 		debug: false,
 		options: {
-			userName: false,
-			passWord: false,
-			port: 27017
+			userName: 'root',
+			passWord: '12345',
+			port: 11565
 		}
 	},
 	secret: [
@@ -18,8 +18,8 @@ module.exports = {
   ],
   "grant": {
     "server": {
-      "host": "codends.net"
+      "host": "paroleapp.herokuapp.com"
     }
   },
-  baseUrl: 'http://localhost:3050'
+  baseUrl: 'http://localhost:3000'
 };

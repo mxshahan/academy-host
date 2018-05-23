@@ -4,13 +4,13 @@ module.exports = {
     compress: false
   },
   db: {
-		host: 'localhost',
-		dbName: 'academy',
+		host: 'ds111565.mlab.com',
+		dbName: 'blog',
 		debug: false,
 		options: {
-			userName: false,
-			passWord: false,
-			port: 27017
+			userName: 'root',
+			passWord: '12345',
+			port: 11565
 		}
 	},
 	secret: [
