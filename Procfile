@@ -1,1 +1,1 @@
-web: cross-env NODE_ENV=production node dist/server/core
+web: node dist/server/core
