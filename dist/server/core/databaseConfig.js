@@ -18,13 +18,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function connectDatabase() {
   let dbUri;
 
-   if (_config2.default.get('db.options.userName')) {
-   dbUri = `mongodb://${_config2.default.get('db.options.userName')}:${_config2.default.get('db.options.passWord')}@${_config2.default.get('db.host')}:${_config2.default.get('db.options.port')}/${_config2.default.get('db.dbName')}`;
-   } else {
-   dbUri = `mongodb://${_config2.default.get('db.host')}:${_config2.default.get('db.options.port')}/${_config2.default.get('db.dbName')}`;
-   }
+  // if (config.get('db.options.userName')) {
+  //   dbUri = `mongodb://${config.get('db.options.userName')}:${config.get('db.options.passWord')}@${config.get('db.host')}:${config.get('db.options.port')}/${config.get('db.dbName')}`;
+  // } else {
+  //   dbUri = `mongodb://${config.get('db.host')}:${config.get('db.options.port')}/${config.get('db.dbName')}`;
+  // }
 
-  dbUri = 'mongodb://root:12345@ds111565.mlab.com:11565/blog'
+  dbUri = 'mongodb://root:12345@ds111565.mlab.com:11565/blog';
 
   return new Promise((resolve, reject) => {
     _mongoose2.default.Promise = global.Promise;
