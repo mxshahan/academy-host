@@ -3,9 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-require('babel-polyfill');
-
+// Modules
 var _koa = require('koa');
 
 var _koa2 = _interopRequireDefault(_koa);
